@@ -1,0 +1,53 @@
+.welcome__content,
+.services__content,
+.relax__content {
+  padding: 100px 0; }
+
+.welcome__content--pointer,
+.services__content--pointer,
+.relax__content--pointer {
+  cursor: pointer; }
+
+.welcome__list,
+.services__list,
+.relax__list {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0; }
+
+.welcome__icon--large,
+.services__icon--large,
+.relax__icon--large {
+  font-size: 60px;
+  font-weight: bold; }
+
+.welcome__icon--medium,
+.services__icon--medium,
+.relax__icon--medium {
+  font-size: 30px; }
+
+.services__container {
+  padding: 100px 0; }
+
+.services__container__content {
+  padding: 0; }
+
+.relax {
+  position: relative; }
+  .relax__content--gearimg {
+    background-image: url("../imgs/gear2.png");
+    background-repeat: no-repeat;
+    background-position: 325% 50%; }
+  .relax__content--bg {
+    background-image: url("../imgs/relax-bg.png");
+    background-color: rgba(0, 0, 0, 0.5);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay; }
+
+.welcome {
+  background-image: url(../imgs/welcome.bg.png);
+  background-size: cover; }
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5); }
