@@ -1,0 +1,26 @@
+
+.clients{
+  &__message{
+    &::after{
+      position: absolute;
+      top: 50%;
+      height: 0;
+      width: 0;
+      border: 20px solid transparent;
+      border-bottom-color: #f8f9fa;
+      content: "";
+    }
+  }
+  &__message--triangleleft{
+    &::after{
+      left: -20px;
+      transform: translateY(-50%) rotate(270deg);
+    }
+  }
+  &__message--triangleright{
+    &::after{
+      right: -20px;
+      transform: translateY(-50%) rotate(90deg);
+    }
+  }
+}

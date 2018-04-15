@@ -1,0 +1,50 @@
+@import "./variables";
+@import "./sections/welcome";
+@import "./sections/services";
+@import "./sections/contact";
+@import "./sections/clients";
+@import "./sections/culture";
+@import "./sections/relax";
+@import "./sections/projects";
+
+.welcome,
+.services,
+.relax,
+.projects,
+.culture,
+.clients,
+.technologies,
+.footertop,
+.footerbottom{
+    overflow: hidden;
+    &__content{
+        padding:$section-padding;
+    }
+    &__content--pointer{
+        cursor: pointer;
+    }
+    &__list{
+        list-style: none;
+        padding-left: 0;
+        margin-left:0;
+    }
+    &__icon--large{
+        font-size: $large-icon-size;
+        font-weight: bold;
+    }
+    &__icon--medium{
+        font-size: $medium-icon-size;
+    }
+    &__icon--circle {
+        border: 2px solid black;
+        border-radius: 50%;
+    }
+    &__btn{
+        background-color:$standard-green;
+        border-radius:25px;
+        &:hover{
+            cursor:pointer;
+        }
+    }
+}
+

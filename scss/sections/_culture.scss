@@ -1,0 +1,48 @@
+
+.culture{
+  &__icon--large{
+    font-size: $large-icon-size - 10px;
+  }
+  &__icon--circle{
+    border:4px solid black;
+    border-color: #868e96;
+  }
+  &__item{
+    position:relative;
+    &::after,
+    &::before{
+      content: '';
+      position: absolute;
+      top: 22%;
+      display: block;
+      width: 200px;
+      height: 5px;
+      background-color: #868e96;
+      border-radius:5px;
+    }
+    &::after{
+      left: 69%;
+    }
+    &::before{
+      left:-20%;
+    }
+
+    &:first-child::before,
+    &:last-child::after{
+      display:none;
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .culture__item::before{
+
+    left:-30%;;
+  }
+}
+@media only screen and (max-width: 990px){
+  .culture__item::before,
+  .culture__item::after{
+    display:none;
+  }
+}

@@ -1,0 +1,8 @@
+
+.welcome{
+  background-image: url(../imgs/welcome.bg.png);
+  background-size:cover;
+  &__container--overlay{
+    background-color:$standard-overlay;
+  }
+}

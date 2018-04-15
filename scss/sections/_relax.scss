@@ -1,0 +1,15 @@
+
+.relax{
+  &__content--gearimg{
+    background-image: url('../imgs/gear2.png');
+    background-repeat:no-repeat;
+    background-position:0 50%;
+  }
+  &__content--bg{
+    background-image: url('../imgs/relax-bg.png');
+    background-color:rgba(0,0,0,.5);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+  }
+}
