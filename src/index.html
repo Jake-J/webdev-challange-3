@@ -18,28 +18,28 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ml-auto">
-            <a class="nav-item nav-link active" href="#">HOME <span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="#">ABOUT</a>
-            <a class="nav-item nav-link" href="#">BLOG</a>
-            <a class="nav-item nav-link" href="#">PORTFOLIO</a>
-            <a class="nav-item nav-link" href="#">CONTACT</a>
+            <a class="nav-item nav-link active" href="#home">HOME <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#about">ABOUT</a>
+            <a class="nav-item nav-link" href="#blog">BLOG</a>
+            <a class="nav-item nav-link" href="#portfolio">PORTFOLIO</a>
+            <a class="nav-item nav-link" href="#contact">CONTACT</a>
           </div>
         </div>
       </nav>
-      <section class="welcome bg-dark">
-        <div class="overlay">
+      <section class="welcome bg-dark" id="home">
+        <div class="welcome__container--overlay">
           <div class="row mx-0">
             <div class="col welcome__content">
               <div class="mx-auto  text-center ">
                 <h1 class="text-white font-weight-bold display-3">CREATIVE DIGITAL <br/> SOLUTIONS </h1>
                 <p class="text-muted py-4">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <button class="btn btn-success welcome__content--pointer">VIEW PORTFOLIO</button>
+                <button class="btn btn-lg  text-white welcome__btn">VIEW PORTFOLIO</button>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="services">
+      <section class="services" id="about">
         <div class="container services__container">
           <div class="row">
             <div class="col services__container__content">
@@ -75,11 +75,11 @@
           </div>
         </div>
       </section>
-      <section class="relax">
+      <section class="relax" id="blog">
         <div class="relax container-fluid">
           <div class="row">
-            <div class="col-md-3 bg-light text-white relax__content relax__content--gearimg"></div>
-            <div class="col-md-9 pl-5 text-white relax__content relax__content--bg">
+            <div class="col-md-3 d-none d-md-block  bg-light text-white relax__content relax__content--gearimg"></div>
+            <div class="col-md-9 col-sm-12 pl-5 text-white relax__content relax__content--bg">
               <h2 class=" font-weight-bold display-4 pb-4">JUST RELAX <span class="text-success">&</span><br/>LET US DO THE HEAVY LIFTING</h2>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit.<br/>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, sapiente laborum!</p>
               <ul class="mb-5 relax__list">
@@ -87,175 +87,190 @@
                 <li class="py-2 d-flex align-items-center"><i class="fa fa-check-circle relax__icon--medium mr-2" ></i> Regular Updates</li>
                 <li class="py-2 d-flex align-items-center"><i class="fa fa-check-circle relax__icon--medium mr-2"></i> Round The Clock Support</li>
               </ul>
-              <button class="btn btn-lg btn-success">LEARN MORE</button>
+              <button class="btn btn-lg relax__btn text-white">LEARN MORE</button>
             </div>
           </div>
         </div>
       </section>
-      <section class="projects py-5">
-        <div class="container">
-          <div class="text-center">
+      <section class="projects" id="portfolio">
+        <div class="container projects__content">
+          <div class="text-center mb-5">
             <h2 class="font-weight-bold dsiplay-5 mb-0">LATEST PROJECT</h2>
             <p class="text-muted mt-0">Lorem ipsum dolor sit amet consectetur.</p>
           </div>
           <div class="row">
-            <div class="col-lg-6">
-              <p>DEVELOPING A FRAMEWORK</p>
+            <div class="col-lg-8">
+              <p class="font-weight-bold">DEVELOPING A FRAMEWORK</p>
               <p class="text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum enim est dolore molestiae molestias reiciendis, ducimus minus sint vel possimus natus, magnam consequatur repellendus.</p>
-              <ul class="list">
-                <li class="d-flex align-items-center">
-                  <i class="fa fa-shopping-basket pr-2"></i>
-                  <div>
+              <ul class="projects__list">
+                <li class="d-flex align-items-center my-2">
+                  <i class="fa fa-shopping-basket p-2 projects__icon--medium projects__icon--circle"></i>
+                  <div class="pl-2">
                     <p class="my-0 py-0 font-weight-bold">E-Commerce Ready</p>
-                    <small class="my-0 py-0">Lorem ipsum dolor sit amet, consectetur adipisicing.</small>
+                    <small class="my-0 py-0 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing.</small>
                   </div>
                 </li>
-                <li class="d-flex align-items-center">
-                  <i class="fa fa-laptop pr-2"></i>
-                  <div>
+                <li class="d-flex align-items-center my-2">
+                  <i class="fa fa-laptop p-2 projects__icon--medium projects__icon--circle"></i>
+                  <div class="pl-2">
                     <p class="my-0 py-0 font-weight-bold">E-Commerce Ready</p>
-                    <small class="my-0 py-0">Lorem ipsum dolor sit amet, consectetur adipisicing.</small>
+                    <small class="my-0 py-0 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing.</small>
                   </div>
                 </li>
-                <li class="d-flex align-items-center">
-                  <i class="fa fa-lock pr-2"></i>
-                  <div>
+                <li class="d-flex align-items-center my-2">
+                  <i class="fa fa-lock px-3 py-2 projects__icon--medium projects__icon--circle"></i>
+                  <div class="pl-2">
                     <p class="my-0 py-0 font-weight-bold">E-Commerce Ready</p>
-                    <small class="my-0 py-0">Lorem ipsum dolor sit amet, consectetur adipisicing.</small>
+                    <small class="my-0 py-0 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing.</small>
                   </div>
                 </li>
               </ul>
               <p class="text-muted mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt praesentium cum temporibus non velit nobis?</p>
-              <a href="#" class="text-success">VIEW DETAILS &rarr;</a>
+              <a href="#" class="text-success font-weight-bold">VIEW DETAILS &rarr;</a>
             </div>
           </div>
         </div>
       </section>
-      <section class="culture py-5 bg-light">
-        <div class="text-center pb-5">
-          <h2 class="font-weight-bold dsiplay-5 mb-0">CULTURE & VALUES</h2>
-          <p class="text-muted mt-0">Lorem ipsum dolor sit amet consectetur.</p>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-4 text-center">
-              <i class="fa fa-music"></i>
-              <p>WORK-LIFE BALANCE</p>
-              <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum aspernatur nisi aliquam ullam delectus quaerat similique suscipit aperiam, nemo blanditiis?</small>
-            </div>
-            <div class="col-lg-4 text-center">              
-                <i class="fa fa-bar-chart"></i>
-                <p>QUALITY OVER QUANTITY</p>
-                <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum aspernatur nisi aliquam ullam delectus quaerat similique suscipit aperiam, nemo blanditiis?</small>
-            </div>
-            <div class="col-lg-4 text-center">              
-                <i class="fa fa-star"></i>
-                <p>WORK-LIFE BALANCE</p>
-                <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum aspernatur nisi aliquam ullam delectus quaerat similique suscipit aperiam, nemo blanditiis?</small>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="clients py-5">
+      <section class="culture bg-light">
+        <div class="container culture__content">
           <div class="text-center pb-5">
             <h2 class="font-weight-bold dsiplay-5 mb-0">CULTURE & VALUES</h2>
             <p class="text-muted mt-0">Lorem ipsum dolor sit amet consectetur.</p>
           </div>
-          <div class="container">
-            <div class="row my-4">
-              <div class="col-lg-3 bg-light rounded-circle"></div>
-              <div class="col-lg-9 bg-light py-5">
-                <p class="text-justify">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam cupiditate ipsum error qui incidunt, enim fugiat nobis! Minima, alias dolorem!"</p>
-                <p class="text-center text-success">- Jamie Richardson, Founder of Cocoa Media</p>
-              </div>
+          <div class="row">
+            <div class="col-lg-4 text-center culture__item">
+              <i class="fa fa-music p-4 mb-3 text-muted  culture__icon--large culture__icon--circle"></i>
+              <p class="font-weight-bold mb-1">WORK-LIFE BALANCE</p>
+              <small class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum aspernatur nisi aliquam ullam delectus quaerat similique suscipit aperiam, nemo blanditiis?</small>
             </div>
-            <div class="row my-4">
-              <div class="col-lg-9 bg-light py-5">
-                <p class="text-justify">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam cupiditate ipsum error qui incidunt, enim fugiat nobis! Minima, alias dolorem!"</p>
-                <p class="text-center text-success">- Jamie Richardson, Founder of Cocoa Media</p>
-              </div>
-              <div class="col-lg-3 bg-light rounded-circle"></div>
+            <div class="col-lg-4 text-center culture__item">
+                <i class="fa fa-bar-chart text-muted p-4 mb-3 culture__icon--large culture__icon--circle"></i>
+                <p class="font-weight-bold mb-1">QUALITY OVER QUANTITY</p>
+                <small class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum aspernatur nisi aliquam ullam delectus quaerat similique suscipit aperiam, nemo blanditiis?</small>
+            </div>
+            <div class="col-lg-4 text-center culture__item">
+                <i class="fa fa-star p-4 mb-3 text-muted culture__icon--large culture__icon--circle"></i>
+                <p class="font-weight-bold mb-1">WORK-LIFE BALANCE</p>
+                <small class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum aspernatur nisi aliquam ullam delectus quaerat similique suscipit aperiam, nemo blanditiis?</small>
             </div>
           </div>
+        </div>
       </section>
-      <section class="contact bg-success py-5">
+      <section class="clients">
+        <div class="container clients__content">
+          <div class="text-center pb-5">
+            <h2 class="font-weight-bold dsiplay-5 mb-0">OUR AWESOME CLIENTS</h2>
+            <p class="text-muted mt-0">Lorem ipsum dolor sit amet consectetur.</p>
+          </div>
+          <div class="row my-4">
+            <div class="col-lg-3 bg-light rounded-circle"></div>
+            <div class="col-lg-9 ">
+              <div class="clients__message clients__message--triangleleft bg-light p-5">
+                <p class="text-justify">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam cupiditate ipsum error qui incidunt, enim fugiat nobis! Minima, alias dolorem!"</p>
+                <p class="text-center text-success">- Jamie Richardson, Founder of Cocoa Media</p>
+              </div>
+            </div>
+          </div>
+          <div class="row my-4">
+            <div class="col-lg-9">
+              <div class="clients__message clients__message--triangleright bg-light p-5">
+                <p class="text-justify">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam cupiditate ipsum error qui incidunt, enim fugiat nobis! Minima, alias dolorem!"</p>
+                <p class="text-center text-success">- Jamie Richardson, Founder of Cocoa Media</p>
+              </div>
+            </div>
+            <div class="col-lg-3 bg-light rounded-circle"></div>
+          </div>
+        </div>
+      </section>
+      <section class="contact py-5" id="contact">
         <div class="text-center">
           <h2 class="font-weight-bold display-4 text-white">READY TO TALK ABOUT YOUR NEXT PROJECT ?</h2>
           <button class="btn btn-outline-light">CONTACT US</button>
         </div>
       </section>
-      <section class="technologies py-5">
-
-      </section>
-      <section class="footer1 bg-dark">
-        <div class="container">
+      <section class="technologies">
+        <div class="container technologies__content">
           <div class="row">
-            <div class="col-4 text-white">
+            <img src="./imgs/Envato.png"  alt="Envato" class="col-lg-3 technologies_content--pointer"/>
+            <img src="./imgs/Wordpress.png"  alt="Wordpress" class="col-lg-3 technologies__content--pointer"/>
+            <img src="./imgs/Tuts+.png"  alt="Tuts" class="col-lg-3 technologies__content--pointer"/>
+            <img src="./imgs/Microlancer%20copy.png"  alt="MicroLancer" class="col-lg-3 technologies__content--pointer"/>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="footertop bg-dark">
+        <div class="container py-5">
+          <div class="row text-white">
+            <div class="col-lg-4">
               <p>CONTACT US</p>
-              <ul>
-                <li>
-                  <i class="fa fa-location"></i> 
-                  <small>55 Main St.<br/> Torronto, ON<br/> M1H 3A5</small>
+              <ul class="footertop__list">
+                <li class="d-flex py-1">
+                  <i class="fa fa-map-marker pt-1 pl-1"></i>
+                  <small class="pl-3">55 Main St.<br/> Torronto, ON<br/> M1H 3A5</small>
                 </li>
-                <li>
-                  <i class="fa fa-mobile"></i>
-                  <small>(415)555-5252</small>
+                <li class="d-flex py-1">
+                  <i class="fa fa-mobile pl-1"></i>
+                  <small class="pl-3">(415)555-5252</small>
                 </li>
-                <li>
+                <li class="d-flex py-1">
                   <i class="fa fa-envelope"></i>
-                  <small>hello@treehouse.com</small>
+                  <small class="pl-2">hello@treehouse.com</small>
                 </li>
               </ul>
             </div>
-            <div class="col-4">
+            <div class="col-lg-4">
               <p>LATEST POSTS</p>
-              <ul>
-                <li>
-                  <i class="fa fa-cart"></i>
-                  <small>Made With Love In Toronto</small>
+              <ul class="footertop__list">
+                <li class="d-flex py-1">
+                  <i class="fa fa-address-card-o pt-1 "></i>
+                  <small class="pl-2">Made With Love In Toronto</small>
                 </li>
-                <li>
-                  <i class="fa fa-image"></i>
-                  <small>Startup News& emerging Tech</small>
+                <li class="d-flex py-1">
+                  <i class="fa fa-image pt-1 "></i>
+                  <small class="pl-2">Startup News& emerging Tech</small>
                 </li>
-                <li>
-                  <i class="fa fa-cart"></i>
-                  <small>Made With Love In Toronto</small>
+                <li class="d-flex py-1">
+                  <i class="fa  pt-1 fa-address-card-o"></i>
+                  <small class="pl-2">Made With Love In Toronto</small>
                 </li>
-                <li>
-                  <i class="fa fa-cart"></i>
-                  <small>Made With Love In Toronto</small>
+                <li class="d-flex py-1">
+                  <i class="fa fa-address-card-o pt-1 "></i>
+                  <small class="pl-2">Made With Love In Toronto</small>
                 </li>
-                <li>
-                  <i class="fa fa-play"></i>
-                  <small>Learn Web Design in 30 Days!</small>
+                <li class="d-flex py-1">
+                  <i class="fa fa-play pt-1 "></i>
+                  <small class="pl-2"> Learn Web Design in 30 Days!</small>
                 </li>
               </ul>
             </div>
-            <div class="col-4">
+            <div class="col-lg-4">
               <p>LATEST TWEETS</p>
-              <ul>
-                <li>
-                  <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae autem modi atque aliquid! Odio.</small>
+              <ul class="footertop__list">
+                <li class="d-flex py-1">
+                  <i class="fa fa-twitter pt-1"></i>
+                  <small class="pl-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae autem modi atque aliquid! Odio.</small>
                 </li>
-                <li>
-                  <small>Lorem ipsum dolor sit amet. Beatae autem modi atque aliquid! Odio.</small>
+                <li class="d-flex py-1">
+                  <i class="fa fa-twitter pt-1"></i>
+                  <small class="pl-2">Lorem ipsum dolor sit amet. Beatae autem modi atque aliquid! Odio.</small>
                 </li>
               </ul>
             </div>
           </div>
         </div>
       </section>
-      <section class="footer2 py-5">
+      <section class="footerbottom py-5">
         <div class="container">
           <div class="row">
             <div class="col-lg-4">
               &copy; Copyright 2014 Freebies.Xpress.com
             </div>
             <div class="col-lg-4">
-              <i class="fa fa-twitter"></i>
-              <i class="fa fa-facebook"></i>
-              <i class="fa fa-google-plus-g"></i>
+              <i class="fa fa-twitter footerbottom__icon--medium mr-2 footerbottom__content--pointer"></i>
+              <i class="fa fa-facebook footerbottom__icon--medium mr-2 footerbottom__content--pointer"></i>
+              <i class="fa fa-google-plus footerbottom__icon--medium mr-2 footerbottom__content--pointer"></i>
+              <i class="fa fa-pinterest footerbottom__icon--medium footerbottom__content--pointer"></i>
             </div>
           </div>
         </div>  
@@ -263,5 +278,16 @@
       <script src="js/jquery.min.js"></script>
       <script src="js/tether.min.js"></script>
       <script src="js/bootstrap.min.js"></script>
+      <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+      </script>
     </body>
 </html>

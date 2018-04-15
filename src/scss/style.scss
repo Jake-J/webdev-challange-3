@@ -1,12 +1,22 @@
-$bg-color:blue;
-$section-padding:100px 0;
-$large-icon-size:60px;
-$medium-icon-size:30px;
-$standard-overlay:rgba(0,0,0,.5);
+@import "./variables";
+@import "./sections/welcome";
+@import "./sections/services";
+@import "./sections/contact";
+@import "./sections/clients";
+@import "./sections/culture";
+@import "./sections/relax";
+@import "./sections/projects";
 
 .welcome,
 .services,
-.relax{
+.relax,
+.projects,
+.culture,
+.clients,
+.technologies,
+.footertop,
+.footerbottom{
+    overflow: hidden;
     &__content{
         padding:$section-padding;
     }
@@ -25,35 +35,16 @@ $standard-overlay:rgba(0,0,0,.5);
     &__icon--medium{
         font-size: $medium-icon-size;
     }
-}
-.services{
-    &__container{
-        padding:$section-padding;
+    &__icon--circle {
+        border: 2px solid black;
+        border-radius: 50%;
     }
-    &__container__content{
-        padding:0;
+    &__btn{
+        background-color:$standard-green;
+        border-radius:25px;
+        &:hover{
+            cursor:pointer;
+        }
     }
-}
-.relax{
-    position: relative;
-    &__content--gearimg{
-        background-image: url('../imgs/gear2.png');
-        background-repeat:no-repeat;
-        background-position:325% 50%;
-    }
-    &__content--bg{
-        background-image: url('../imgs/relax-bg.png');
-        background-color:rgba(0,0,0,.5);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-blend-mode: overlay;
-    }
-}
-.welcome{
-    background-image: url(../imgs/welcome.bg.png);
-    background-size:cover;
 }
 
-.overlay{
-    background-color:rgba(0,0,0,.5);
-}
